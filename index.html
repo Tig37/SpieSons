@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mes petits sons</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mes petits sons</h1>
+    <p>Appuie sur un bouton pour jouer le son. Ajoute tes fichiers dans <code>sounds/</code> et liste-les dans <code>sounds.json</code>.</p>
+  </header>
+
+  <main>
+    <section id="controls" class="panel">
+      <div class="actions">
+        <button id="stopAll" aria-label="Arrêter tous les sons">⏹ Arrêter tout</button>
+      </div>
+      <p class="hint">💡 Pour ajouter un son, dépose le fichier dans <code>sounds/</code> puis ajoute une entrée dans <code>sounds.json</code> (voir exemple). Pas besoin de modifier le HTML.</p>
+    </section>
+
+    <section id="playlist" class="grid" aria-live="polite" aria-busy="true">
+      <div class="loading">Chargement de la playlist…</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© Tigkran – Mes sons</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
